@@ -1,4 +1,6 @@
 from Cook import Cook
+from Restuarant import Restuarant
+from Simulation import Simulation
 
-c = Cook("preparing BLT")
-c.prepare_meal()
+sim = Simulation()
+sim.run()

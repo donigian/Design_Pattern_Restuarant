@@ -1,11 +1,20 @@
+import abc
+
 class Restuarant(object):
-    def __new__(type):
-        if not '_the_instance' in type.__dict__:
-            type._the_instance = object.__new__(type)
-        return type._the_instance
+    __metaclass__ = abc.ABCMeta
 
-restuarant = Restuarant()
-restuarant.location = "411 Arroyo Parkway"
+    def __init__(self, name):
+        self.name = name
 
-another_restuarant = Restuarant()
-print(another_restuarant.location)
+    @abc.abstractmethod
+    def create_pizza(self, type):
+        print("abstract method called")
+        pass
+
+    def order_pizza(self, type):
+        pizza = self.create_pizza(type)
+        pizza.prepare()
+        pizza.bake()
+        pizza.cut()
+        pizza.box()
+        return pizza

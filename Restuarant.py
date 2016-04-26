@@ -8,7 +8,6 @@ class Restuarant(object):
 
     @abc.abstractmethod
     def create_pizza(self, type):
-        print("abstract method called")
         pass
 
     def order_pizza(self, type):

@@ -1,8 +1,10 @@
 from Beverage import Beverage
 
 class Expresso(Beverage):
+
     def __init__(self):
         self.description = "Expresso"
+        self.price = 2.99
 
     def cost(self):
-        return 2.99
+        return self.price

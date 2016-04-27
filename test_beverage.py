@@ -7,12 +7,15 @@ from Mocha import Mocha
 class BeverageTest(TestCase):
 
     def test_create_drink(self):
+        # Arrange
         beverage_description = 'House Blend Mocha'
         beverage_cost = 2.189
 
-        second_beverage = HouseBlend()
-        second_beverage = Mocha(second_beverage)
-        print(second_beverage.get_beverage_description(), " ", second_beverage.cost())
+        # Act
+        beverage = HouseBlend()
+        beverage = Mocha(beverage)
+        print(beverage.get_beverage_description(), " ", beverage.cost())
 
-        self.assertEquals(second_beverage.get_beverage_description(), beverage_description)
-        self.assertAlmostEqual(round(second_beverage.cost(),2), round(beverage_cost,2))
+        # Assert
+        self.assertEquals(beverage.get_beverage_description(), beverage_description)
+        self.assertAlmostEqual(round(beverage.cost(), 2), round(beverage_cost, 2))

@@ -5,11 +5,11 @@ from Pasadena_Restuarant import Pasadena_Restuarant
 class TestPizza(TestCase):
     def test_prepare_pizza(self):
         # Arrange
+        pizza_price = 12.0
         pasadena_CPK = Pasadena_Restuarant("Pasadena CPK")
 
         # Act
         pizza = pasadena_CPK.order_pizza("NYStyle")
-        pizza_price = 12.0
 
         # Assert
         self.assertEquals(pizza.name, "NY Style")

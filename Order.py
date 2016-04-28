@@ -1,21 +1,15 @@
-class Order:
-    def __init__(self, func=None):
+from Command import Command
+from Cook import Cook
+
+class Order(Command):
+    def __init__(self, cook, func=None):
         if func:
             self.execute = func
+        self.cook = cook
 
     def execute(self):
-        print("Default regular order")
+        print("Regular order ready")
 
-def regular_order():
-        print("regular order")
+    def cook(self):
+        print("Order class: Cooking")
 
-def modified_order():
-        print("modified order")
-
-order = Order()
-
-regular_order = Order(regular_order)
-
-modified_order = Order(modified_order)
-
-regular_order.execute()

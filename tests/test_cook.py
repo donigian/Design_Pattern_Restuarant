@@ -1,5 +1,7 @@
 from unittest import TestCase
-from Cook import Cook
+
+from design_pattern_restuarant.Cook import Cook
+
 
 class TestCook(TestCase):
     def test_activity(self):

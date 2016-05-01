@@ -1,7 +1,8 @@
 import time
 
 class Cook:
-    def __init__(self):
+    def __init__(self, order):
+        self.order = order
         pass
 
     def time_to_prepare(func):
@@ -14,7 +15,7 @@ class Cook:
         return decorated
 
     @time_to_prepare
-    def cook(self):
+    def cook(self, order):
         print("Cook: Cooking...")
         pass
 

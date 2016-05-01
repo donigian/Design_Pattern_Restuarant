@@ -1,6 +1,4 @@
 from unittest import TestCase
-from Beverage import Beverage
-from Expresso import Expresso
 from HouseBlend import HouseBlend
 from Mocha import Mocha
 

@@ -3,6 +3,8 @@ from NYStyleCheesePizza import NYStyleCheesePizza
 from ChicagoStyleCheesePizza import ChicagoStyleCheesePizza
 
 class Pasadena_Restuarant(Restuarant):
+    def __init__(self, name):
+        self.name = name
 
     def create_pizza(self, item):
         if item == "NYStyle":

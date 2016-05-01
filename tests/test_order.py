@@ -1,8 +1,11 @@
 import unittest
 from unittest import TestCase
-from Waitress import Waitress
+
 from Cook import Cook
-from Order import Order
+from Waitress import Waitress
+
+from design_pattern_restuarant.Order import Order
+
 
 class TestOrder(TestCase):
     def test_order_pizza(self):

@@ -1,6 +1,9 @@
 from unittest import TestCase
+
 from HouseBlend import HouseBlend
-from Mocha import Mocha
+
+from design_pattern_restuarant.Mocha import Mocha
+
 
 class BeverageTest(TestCase):
 

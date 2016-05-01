@@ -1,4 +1,4 @@
-from Beverage import Beverage
+from design_pattern_restuarant.Beverage import Beverage
 
 class HouseBlend(Beverage):
     def __init__(self):

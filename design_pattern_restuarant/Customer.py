@@ -4,7 +4,7 @@ class Customer:
         self.name_of_pizza = ''
 
     def pay_bill_by_cc(self, amount):
-        print('Finished paying {} by credit card').format(amount)
+        print('Finished paying {0} by credit card').format(amount)
         return True
 
     def ready_to_order(self, name_of_pizza):

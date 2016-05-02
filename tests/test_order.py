@@ -11,9 +11,9 @@ class TestOrder(TestCase):
     def test_order_pizza(self):
 
         # Arrange
-        cook = Cook("Bob")
+        cook = Cook('Bob')
         order = Order(cook)
-        waitress = Waitress()
+        waitress = Waitress('Stacy')
 
 
         # Act

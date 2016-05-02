@@ -1,7 +1,7 @@
 from unittest import TestCase
 import unittest
 
-from Menu_Item import Menu_Item
+from design_pattern_restuarant.Menu_Item import Menu_Item
 
 class TestMenu_Item(TestCase):
 

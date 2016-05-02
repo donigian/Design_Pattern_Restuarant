@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from HouseBlend import HouseBlend
+from design_pattern_restuarant.HouseBlend import HouseBlend
 
 from design_pattern_restuarant.Mocha import Mocha
 

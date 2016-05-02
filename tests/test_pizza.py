@@ -1,6 +1,6 @@
 import unittest
 from unittest import TestCase
-from Pasadena_Restuarant import Pasadena_Restuarant
+from design_pattern_restuarant.Pasadena_Restuarant import Pasadena_Restuarant
 
 class TestPizza(TestCase):
     def test_prepare_pizza(self):

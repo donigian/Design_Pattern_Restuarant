@@ -2,6 +2,7 @@ from Pasadena_Restuarant import Pasadena_Restuarant
 from Cook import Cook
 from Customer import Customer
 from Server import Server
+from Hostess import Hostess
 
 class Simulation(object):
 
@@ -16,9 +17,15 @@ class Simulation(object):
 
         customer = Customer("Anderson Silva")
         server = Server('Holly Holm')
+
+        print('\n')
+        hostess = Hostess()
+        server.add(hostess)
+        server.is_busy = True
+
         if customer.ready_to_order('NYStyle'):
             pizza_order = pasadena_CPK.order_pizza(customer.name_of_pizza)
             server.take_order(pizza_order)
-            server.serve_order()
+            server.serve_order(pizza_order)
             server.bring_bill()
-            customer.pay_bill_by_cc()
+            customer.pay_bill_by_cc(pizza_order.price)
